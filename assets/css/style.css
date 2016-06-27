@@ -1,13 +1,14 @@
+body { margin: 20px }
 /* A Linux- and Windows-friendly sans-serif font stack: http://prospects.mhurrell.co.uk/post/updating-the-helvetica-font-stack */
-body {font: 13px Helmet, Freesans, sans-serif; background: #E8DCBF}
+body {font: 13px Helmet, Freesans, sans-serif; background: #F9F8F4}
 
 /* Using local fonts? Check out Font Squirrel's webfont generator: http://www.fontsquirrel.com/tools/webfont-generator */
 
 /* We like off-black for text. */
 body, select, input, textarea {color: #333;}
 
-a {color: #03f;}
-a:hover {color: #69f;}
+a {color: #333; text-decoration: none}
+a:hover {color: #333; text-decoration: none}
 
 /* Custom text-selection colors (remove any text shadows: http://twitter.com/miketaylr/status/12228805301) */
 ::-moz-selection{background: #fcd700; color: #fff; text-shadow: none;}
@@ -26,8 +27,25 @@ textarea:-moz-placeholder { color:#a9a9a9; }
 /* let's give blockquotes *some* default styling, because unstyled blockquotes are dangerous */
 blockquote {padding: 16px; background: #eee;}
 
+header h1 {
+  font: 20px 'Quattrocento Sans', sans-serif;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+footer {
+  color: #C0BFBC;
+  margin-top: 20px
+}
 
 .wrapper { text-align: center }
+
+img {
+-webkit-box-shadow: 0px 0px 7px 0px rgba(50, 50, 50, 0.5);
+-moz-box-shadow:    0px 0px 7px 0px rgba(50, 50, 50, 0.5);
+box-shadow:         0px 0px 7px 0px rgba(50, 50, 50, 0.5);
+}
+
 /* Media queries
 -------------------------------------------------------------------------------*/
 
